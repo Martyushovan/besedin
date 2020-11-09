@@ -1,0 +1,610 @@
+@font-face {
+    font-family: 'Prosto One';
+    src: url('../fonts/subset-ProstoOne-Regular.woff2') format('woff2'),
+        url('../fonts/subset-ProstoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/subset-Raleway-Thin.woff2') format('woff2'),
+        url('../fonts/subset-Raleway-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size:  9px;
+  color: #fff;
+  line-height:  11px;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+* {
+   box-sizing: inherit;
+  }
+
+h2 {
+  font-family: 'Prosto One', cursive;
+  font-weight: normal;
+  font-size:  26px;
+  line-height:  30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.img_video {
+    cursor: pointer;
+ }
+
+#modal_form {
+    width: 700px; 
+    height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -275px;
+    margin-left: -350px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 9999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+ 
+/* Пoдлoжкa */
+#overlay {
+    z-index:9998; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.98; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.98; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=80);
+    width:100%; 
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    cursor:pointer;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+ 
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+    color:white;
+}
+
+.grom {
+  position: absolute;
+  background-image: url(../image/grom.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 640px;
+}
+
+.grom__position {
+  margin-top: 19px;
+  margin-bottom: 45px;
+  letter-spacing: 0.2em;
+}
+
+.grom__name {
+  margin-left: 70px;
+  margin-right: 70px;
+  height: 63px;
+  margin-bottom: 0;
+}
+
+.grom__subtitle {
+  letter-spacing: 0.2em;  
+}
+
+.doctor {
+  position: absolute;
+  background-image: url(../image/chum.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 839px;
+}
+
+.doctor__position {
+  margin-top: 19px;
+  margin-bottom: 35px;
+  letter-spacing: 0.2em;
+}
+
+.doctor__name {
+  margin-bottom: 45px;
+}
+
+.doctor__subtitle {
+  letter-spacing: 0.2em;  
+}
+
+.iowa {
+  position: absolute;
+  background-image: url(../image/iowa.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 1038px;
+}
+
+.iowa__position {
+  margin-top: 18px;
+  margin-bottom: 47px;
+  letter-spacing: 0.2em;
+}
+
+.iowa__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 14px;
+}
+
+.iowa__subtitle {
+  letter-spacing: 0.2em;  
+} 
+
+.iowa-m {
+  position: absolute;
+  background-image: url(../image/iowa-m.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 1238px;
+}
+
+.iowa-m__position {
+  margin-top: 19px;
+  margin-bottom: 45px;
+  letter-spacing: 0.2em;
+}
+
+.iowa-m__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 14px;
+}
+
+.iowa-m__subtitle {
+  letter-spacing: 0.2em;  
+}
+
+.nyusha {
+  position: absolute;
+  background-image: url(../image/nyusha.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 1437px;
+}
+
+.nyusha__position {
+  margin-top: 19px;
+  margin-bottom: 45px;
+  letter-spacing: 0.2em;
+}
+
+.nyusha__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 14px;
+}
+
+.nyusha__subtitle {
+  letter-spacing: 0.2em;  
+}
+
+.leningrad {
+  position: absolute;
+  background-image: url(../image/leningrad.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  left: 0px;
+  top: 1637px;
+}
+
+.leningrad__position {
+  margin-top: 19px;
+  margin-bottom: 45px;
+  letter-spacing: 0.2em;
+}
+
+.leningrad__name {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 14px;
+}
+
+.leningrad__subtitle {
+  letter-spacing: 0.2em;  
+}
+
+@media (min-width: 768px) {
+
+.wrapper {
+  max-width: 768px;
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+
+.grom {
+  position: absolute;
+  background-image: url(../image/grom.png);
+  background-size: cover;
+  background-position: center;
+  width: 385px;
+  height: 214px;
+  left: -1px;
+  top: 1024px;
+}
+
+.grom__position {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+}
+
+.grom__name {
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 63px;
+  margin-bottom: 15px;
+}
+
+.doctor {
+  background-image: url(../image/chum.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 385px;
+  height: 214px;
+  left: 383px;
+  top: 1024px;
+}
+
+.doctor__position {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+}
+
+.doctor__name {
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.iowa {
+  position: absolute;
+  background-image: url(../image/iowa.png);
+  background-size: cover;
+  background-position: center;
+  width: 385px;
+  height: 214px;
+  left: -1px;
+  top: 1238px;
+}
+
+.iowa__position {
+  margin-top: 19px;
+  margin-bottom: 50.3px;
+  letter-spacing: 0.2em;
+}
+
+.iowa__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 19.1px;
+}
+
+.iowa-m {
+  position: absolute;
+  background-image: url(../image/iowa-m.png);
+  background-size: cover;
+  background-position: center;
+  width: 385px;
+  height: 214px;
+  left: 383px;
+  top: 1238px;
+}
+
+.iowa-m__position {
+  margin-top: 20px;
+  margin-bottom: 49.3px;
+  letter-spacing: 0.2em;
+}
+
+.iowa-m__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 19.1px;
+}
+
+.nyusha {
+  position: absolute;
+  background-image: url(../image/nyusha.png);
+  background-size: cover;
+  background-position: center;
+  width: 385px;
+  height: 214px;
+  left: -1px;
+  top: 1450px;
+}
+
+.nyusha__position {
+  margin-top: 20px;
+  margin-bottom: 49.6px;
+  letter-spacing: 0.2em;
+}
+
+.nyusha__name {
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 18px;
+}
+
+.leningrad {
+  position: absolute;
+  background-image: url(../image/leningrad.png);
+  background-size: cover;
+  background-position: center;
+  width: 385px;
+  height: 214px;
+  left: 383px;
+  top: 1450px;
+}
+
+.leningrad__position {
+  margin-top: 20px;
+  margin-bottom: 49.6px;
+  letter-spacing: 0.2em;
+}
+
+.leningrad__name {
+  margin-left: 71px;
+  margin-right: 71px;
+  margin-bottom: 18px;
+}
+
+}
+
+@media (min-width: 1440px) {
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.grom {
+  position: absolute;
+  background-image: url(../image/grom-d.png);
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 0px;
+  top: 856px;
+}
+
+.grom__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 95px;
+  letter-spacing: 0.2em;
+}
+
+.grom__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 144px;
+  margin-right: 144px;
+  height: 63px;
+  margin-bottom: 80px;
+}
+
+.grom__subtitle {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.doctor {
+  background-image: url(../image/chum_d.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 720px;
+  top: 856px;
+}
+
+.doctor__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 95px;
+  letter-spacing: 0.2em;
+}
+
+.doctor__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 25px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.doctor__subtitle {
+  font-size: 13px;
+  line-height: 15px;  
+}
+
+.iowa {
+  position: absolute;
+  background-image: url(../image/iowa-d.png);
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 0px;
+  top: 1256px;
+}
+
+.iowa__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 99.3px;
+  letter-spacing: 0.2em;
+}
+
+.iowa__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 25px;
+}
+
+.iowa__subtitle {
+  font-size: 13px;
+  line-height: 15px;   
+} 
+
+.iowa-m {
+  position: absolute;
+  background-image: url(../image/iowa-m-d.png);
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 720px;
+  top: 1256px;
+}
+
+.iowa-m__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 96.3px;
+  letter-spacing: 0.2em;
+}
+
+.iowa-m__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 25px;
+}
+
+.iowa-m__subtitle {
+  font-size: 13px;
+  line-height: 15px;   
+}
+
+
+.nyusha {
+  position: absolute;
+  background-image: url(../image/nyusha-d.png);
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 0px;
+  top: 1653px;
+}
+
+.nyusha__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 96.3px;
+  letter-spacing: 0.2em;
+}
+
+.nyusha__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 18px;
+}
+
+.nyusha__subtitle {
+  font-size: 13px;
+  line-height: 15px;  
+}
+
+
+.leningrad {
+  position: absolute;
+  background-image: url(../image/leningrad-d.png);
+  background-size: cover;
+  position: absolute;
+  width: 720px;
+  height: 400px;
+  left: 720px;
+  top: 1653px;
+}
+
+.leningrad__position {
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 38px;
+  margin-bottom: 96.3px;
+  letter-spacing: 0.2em;
+}
+
+.leningrad__name {
+  font-size: 48px;
+  line-height: 60px;
+  margin-left: 134px;
+  margin-right: 134px;
+  margin-bottom: 18px;
+}
+
+.leningrad__subtitle {
+  font-size: 13px;
+  line-height: 15px;   
+}
+
+}

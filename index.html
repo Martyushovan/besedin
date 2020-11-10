@@ -17,7 +17,7 @@
   <div class="wrapper">
     
     <div class="grom">
-      <a href="#" rel="group" onclick='show_video();' class='img_video'>
+      <a href="#" rel="group" onclick='show_video1();' class='img_video'>
        <p class="grom__position">режиссер, продюсер и сценарист</p>
       <h2 class="grom__name">&laquo;майор гром&raquo;</h2>
       <p class="grom__subtitle">короткометражный фильм</p>
@@ -27,16 +27,20 @@
   <!-- end grom -->
 
   <div class="doctor">
-    <p class="doctor__position">режиссер</p>
+    <a href="#" rel="group" onclick='show_video2();' class='img_video'>
+      <p class="doctor__position">режиссер</p>
     <h2 class="doctor__name">&laquo;майор гром: чумной доктор&raquo;</h2>
     <p class="doctor__subtitle">тизер к фильму</p>
+    </a>
   </div>
   <!-- end doctor -->
 
   <div class="iowa">
-    <p class="iowa__position">режиссер и продюсер</p>
+    <a href="#" rel="group" onclick='show_video3();' class='img_video'>
+      <p class="iowa__position">режиссер и продюсер</p>
     <h2 class="iowa__name">iowa</br>&laquo;бьёт бит&raquo;</h2>
     <p class="iowa__subtitle">музыкальное видео</p>
+    </a>
   </div>
   <!-- end iowa -->
 
@@ -68,14 +72,27 @@
 
   <script src="js/script.js"></script>
 
-  <div id="modal_form"><!-- Сaмo oкнo -->
+  <div id="modal_form-grom"><!-- Сaмo oкнo -->
       <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
       <!-- Тут любoе сoдержимoе -->
         <center>
-        <!-- <iframe width="650" height="488" src="https://www.youtube.com/embed/RLt65JxNsWI?enablejsapi=1" frameborder="0" allowfullscreen id='v1'></iframe> -->
-        <iframe width="700" height="488" src="https://www.youtube.com/embed/RLt65JxNsWI/?autoplay=1" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay" allowfullscreen id="v1" class="grom-v"></iframe>
+         <iframe width="700" height="488" src="https://www.youtube.com/embed/RLt65JxNsWI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay" allowfullscreen id="v1"></iframe>
         </center>
-</div>
+  </div>
+  <div id="modal_form-chum"><!-- Сaмo oкнo -->
+      <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
+      <!-- Тут любoе сoдержимoе -->
+        <center>
+         <iframe width="750" height="488" src="https://www.youtube.com/embed/aUi6fQRUP1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v2"></iframe>
+        </center>
+  </div>
+   <div id="modal_form-iowa"><!-- Сaмo oкнo -->
+      <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
+      <!-- Тут любoе сoдержимoе -->
+        <center>
+         <iframe width="759" height="320" src="https://www.youtube.com/embed/d9eSfSACgmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v3"></iframe>
+        </center>
+  </div>
  
 <div id="overlay">
 </div><!-- Пoдлoжкa -->

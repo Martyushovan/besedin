@@ -49,7 +49,9 @@ a {
     cursor: pointer;
  }
 
-#modal_form {
+#modal_form-grom,
+#modal_form-chum,
+#modal_form-iowa {
     width: 700px; 
     height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
     position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */

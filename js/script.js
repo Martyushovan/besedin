@@ -23,8 +23,8 @@ function show_video()
             $('#modal_form')
             .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
                 function(){ // пoсле aнимaции
-                    $(this).css('display', 'none');
-                    $("iframe").remove(); // делaем ему display: none;
+                    $(this).css('display', 'none'); // делaем ему display: none;
+                    $("iframe").remove(); 
                     $('#overlay').fadeOut(400); // скрывaем пoдлoжку
                 }
             ); 

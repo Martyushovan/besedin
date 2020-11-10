@@ -51,7 +51,10 @@ a {
 
 #modal_form-grom,
 #modal_form-chum,
-#modal_form-iowa {
+#modal_form-iowa,
+#modal_form-iowa-m,
+#modal_form-nyusha,
+#modal_form-leningrad {
     width: 700px; 
     height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
     position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */

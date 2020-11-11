@@ -55,8 +55,8 @@ a {
 #modal_form-iowa-m,
 #modal_form-nyusha,
 #modal_form-leningrad {
-    width: 700px; 
-    height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    width: 360px; 
+    height: 200px; /* Рaзмеры дoлжны быть фиксирoвaны */
     position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
     top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
     left: 50%; /* пoлoвинa экрaнa слевa */
@@ -83,6 +83,14 @@ a {
     cursor:pointer;
     display:none; /* в oбычнoм сoстoянии её нет) */
 }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 360px;
+  margin: auto;
+}
  
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 .modal_close {
@@ -97,14 +105,14 @@ a {
 }
 
 .grom {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/grom.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 640px;
+  /*left: 0px;*/
+  /*top: 640px;*/
 }
 
 .grom__position {
@@ -125,14 +133,14 @@ a {
 }
 
 .doctor {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/chum.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 839px;
+  /*left: 0px;*/
+  /*top: 839px;*/
 }
 
 .doctor__position {
@@ -150,14 +158,14 @@ a {
 }
 
 .iowa {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 1038px;
+  /*left: 0px;*/
+  /*top: 1038px;*/
 }
 
 .iowa__position {
@@ -177,14 +185,14 @@ a {
 } 
 
 .iowa-m {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa-m.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 1238px;
+  /*left: 0px;*/
+  /*top: 1238px;*/
 }
 
 .iowa-m__position {
@@ -204,14 +212,14 @@ a {
 }
 
 .nyusha {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/nyusha.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 1437px;
+  /*left: 0px;*/
+  /*top: 1437px;*/
 }
 
 .nyusha__position {
@@ -231,14 +239,14 @@ a {
 }
 
 .leningrad {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/leningrad.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  left: 0px;
-  top: 1637px;
+  /*left: 0px;*/
+  /*top: 1637px;*/
 }
 
 .leningrad__position {
@@ -260,22 +268,25 @@ a {
 @media (min-width: 768px) {
 
 .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 768px;
   margin: auto;
-  position: relative;
-  vertical-align: middle;
+  /*position: relative;*/
+  /*vertical-align: middle;*/
 }
 
 
 .grom {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/grom.png);
   background-size: cover;
   background-position: center;
-  width: 385px;
+  width: 375.6px;
   height: 214px;
-  left: -1px;
-  top: 1024px;
+  /*left: -1px;*/
+  /*top: 1024px;*/
 }
 
 .grom__position {
@@ -295,11 +306,11 @@ a {
   background-image: url(../image/chum.png);
   background-position: center;
   background-size: cover;
-  position: absolute;
-  width: 385px;
+  /*position: absolute;*/
+  width: 375.6px;
   height: 214px;
-  left: 383px;
-  top: 1024px;
+  /*left: 383px;*/
+  /*top: 1024px;*/
 }
 
 .doctor__position {
@@ -315,14 +326,14 @@ a {
 }
 
 .iowa {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa.png);
   background-size: cover;
   background-position: center;
-  width: 385px;
+  width: 375.6px;
   height: 214px;
-  left: -1px;
-  top: 1238px;
+  /*left: -1px;*/
+  /*top: 1238px;*/
 }
 
 .iowa__position {
@@ -338,14 +349,14 @@ a {
 }
 
 .iowa-m {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa-m.png);
   background-size: cover;
   background-position: center;
-  width: 385px;
+  width: 375.6px;
   height: 214px;
-  left: 383px;
-  top: 1238px;
+  /*left: 383px;*/
+  /*top: 1238px;*/
 }
 
 .iowa-m__position {
@@ -361,14 +372,14 @@ a {
 }
 
 .nyusha {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/nyusha.png);
   background-size: cover;
   background-position: center;
-  width: 385px;
+  width: 375.6px;
   height: 214px;
-  left: -1px;
-  top: 1450px;
+  /*left: -1px;*/
+  /*top: 1450px;*/
 }
 
 .nyusha__position {
@@ -384,14 +395,14 @@ a {
 }
 
 .leningrad {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/leningrad.png);
   background-size: cover;
   background-position: center;
-  width: 385px;
+  width: 375.6px;
   height: 214px;
-  left: 383px;
-  top: 1450px;
+  /*left: 383px;*/
+  /*top: 1450px;*/
 }
 
 .leningrad__position {
@@ -410,22 +421,59 @@ a {
 
 @media (min-width: 1440px) {
 
+
+#modal_form-grom,
+#modal_form-chum,
+#modal_form-iowa,
+#modal_form-iowa-m,
+#modal_form-nyusha,
+#modal_form-leningrad {
+    width: 700px; 
+    height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -275px;
+    margin-left: -350px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 9999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1440px;
+  height: 857px;
+  background-image: url(../image/promo-b.png);
+  background-position: center;
+  background-size: cover;
+}  
+
 .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 1440px;
+  height: 1200px;
   margin: auto;
-  position: relative;
-  vertical-align: middle;
+  /*position: relative;*/
+  /*vertical-align: middle;*/
 }
 
 .grom {
-  position: absolute;
+  flex-direction: row;
+  /*position: absolute;*/
   background-image: url(../image/grom-d.png);
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  width: 713.2px;
   height: 400px;
-  left: 0px;
-  top: 856px;
+
+  margin: 0;
+  /*left: 0px;*/
+  /*top: 856px;*/
 }
 
 .grom__position {
@@ -454,11 +502,13 @@ a {
   background-image: url(../image/chum_d.png);
   background-position: center;
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  
+  /*position: absolute;*/
+  width: 713.2px;
   height: 400px;
-  left: 720px;
-  top: 856px;
+  margin: 0;
+  /*left: 720px;*/
+  /*top: 856px;*/
 }
 
 .doctor__position {
@@ -483,14 +533,14 @@ a {
 }
 
 .iowa {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa-d.png);
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  /*position: absolute;*/
+  width: 713.2px;
   height: 400px;
-  left: 0px;
-  top: 1256px;
+  /*left: 0px;*/
+  /*top: 1256px;*/
 }
 
 .iowa__position {
@@ -515,14 +565,14 @@ a {
 } 
 
 .iowa-m {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/iowa-m-d.png);
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  /*position: absolute;*/
+  width: 713.2px;
   height: 400px;
-  left: 720px;
-  top: 1256px;
+  /*left: 720px;*/
+  /*top: 1256px;*/
 }
 
 .iowa-m__position {
@@ -548,14 +598,14 @@ a {
 
 
 .nyusha {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/nyusha-d.png);
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  /*position: absolute;*/
+  width: 713.2px;
   height: 400px;
-  left: 0px;
-  top: 1653px;
+  /*left: 0px;*/
+  /*top: 1653px;*/
 }
 
 .nyusha__position {
@@ -581,14 +631,14 @@ a {
 
 
 .leningrad {
-  position: absolute;
+  /*position: absolute;*/
   background-image: url(../image/leningrad-d.png);
   background-size: cover;
-  position: absolute;
-  width: 720px;
+  /*position: absolute;*/
+  width: 713.2px;
   height: 400px;
-  left: 720px;
-  top: 1653px;
+  /*left: 720px;*/
+  /*top: 1653px;*/
 }
 
 .leningrad__position {

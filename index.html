@@ -13,10 +13,12 @@
 <body>
 
   <div class="promo">
-    <header>
-      <nav>
-        <a href="">блог</a>
-        <a href="">контакты</a>
+    <header class="header">
+      <div class="logo" id="logo"><img src="image/logo.png" alt=""></div>
+      <nav class="nav">
+        <a class="nav-item" href="">блог</a>
+        <a class="nav-item" href="">контакты</a>
+        <a class="nav-item" href=""><img src="image/instagram.svg" alt=""></a>
       </nav>
     </header>
     <div>
@@ -28,7 +30,8 @@
   
   <div class="wrapper">
     
-    <div class="grom">
+    <section class="work">
+      <div class="grom">
       <a href="#" rel="group" onclick='show_video1();' class='img_video'>
        <p class="grom__position">режиссер, продюсер и сценарист</p>
       <h2 class="grom__name">&laquo;майор гром&raquo;</h2>
@@ -81,8 +84,27 @@
     <p class="leningrad__subtitle">музыкальное видео</p>
     </a>
   </div>
+    </section>
   <!-- end leningrad -->
+
+  <button class="look">посмотреть больше</button>
+
+  <div class="about">
+    <div class="about__row">
+      <div class="about__column-left">
+        <h3 class="about__title">Владимир Беседин</h3>
+        <p class="about__subtitle">Режиссер, продюссер, сценарист</p>
+      </div>
+      <div class="about__column-right">
+        <p class="about__text">У Владимира Беседина западный подход к съемке, он учился у голливудских сценаристов и получал профессиональные консультации у продюсеров крупнейших американских кинокомпаний.</p>
+      </div>
+    </div>
+    <img src="image/about.png" alt="">
   </div>
+
+
+    </div> <!--end wrapper-->
+
 
   <script src="js/jquery-3.5.1.min.js"></script>
 
@@ -106,7 +128,7 @@
    <div id="modal_form-iowa">
       <span class="modal_close">x</span>       
         <center>
-         <iframe width="720" height="405" src="https://www.youtube.com/embed/RLt65JxNsWI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v3"></iframe>
+         <iframe width="720" height="405" src="https://www.youtube.com/embed/d9eSfSACgmI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="v3"></iframe>
         </center>
   </div>
   <div id="modal_form-iowa-m">

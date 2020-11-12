@@ -26,7 +26,7 @@ body {
   box-sizing: border-box;
   font-weight: 600;
   margin: 0 auto;
-}
+ }
 
 * {
    box-sizing: inherit;
@@ -55,8 +55,8 @@ a {
 #modal_form-iowa-m,
 #modal_form-nyusha,
 #modal_form-leningrad {
-    width: 360px; 
-    height: 200px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    width: 700px; 
+    height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
     position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
     top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
     left: 50%; /* пoлoвинa экрaнa слевa */
@@ -442,29 +442,67 @@ a {
 }
 
 .promo {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
   width: 1440px;
   height: 857px;
+  margin: 0 auto;
   background-image: url(../image/promo-b.png);
   background-position: center;
   background-size: cover;
-}  
+} 
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 1440px;
+  height: 40px;
+  /*position: relative;*/
+}
+
+.logo {
+  /*position: absolute;*/
+  margin-right: auto;
+  padding-top: 33.3px;
+  padding-left: 43.95px;
+  padding-top: 40px;
+}
+
+.nav {
+  position: absolute;
+  padding-top: 30px;
+  right: 20px;
+  margin-left: 1100px;
+
+
+} 
+
+.nav-item {
+  margin-right: 20px;
+}
 
 .wrapper {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*align-items: center;*/
+  max-width: 1440px;
+  /*height: 1200px;*/
+  margin: auto;
+  /*position: relative;*/
+  /*vertical-align: middle;*/
+}
+
+.work {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   max-width: 1440px;
   height: 1200px;
   margin: auto;
-  /*position: relative;*/
-  /*vertical-align: middle;*/
-}
+  margin-bottom: 53px;
+} 
 
 .grom {
-  flex-direction: row;
+  /*flex-direction: row;*/
   /*position: absolute;*/
   background-image: url(../image/grom-d.png);
   background-size: cover;
@@ -604,8 +642,14 @@ a {
   /*position: absolute;*/
   width: 713.2px;
   height: 400px;
+  overflow: hidden;
   /*left: 0px;*/
   /*top: 1653px;*/
+}
+
+.nyusha:hover {
+  background-image: url(../image/G66VYyEWk40.jpg);
+  transform: scale(1.1);
 }
 
 .nyusha__position {
@@ -660,6 +704,76 @@ a {
 .leningrad__subtitle {
   font-size: 13px;
   line-height: 15px;   
+}
+
+.look {
+  width: 267px;
+  height: 65px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  margin: auto;
+  margin-bottom: 186px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.about {
+ max-width: 1440px;
+ margin: 0 auto;
+ color: #000;
+}
+
+.about__title {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+  text-transform: none;
+  color: #333333;
+  text-align: left;
+  margin: 0;
+}
+
+.about__row {
+  display: block;
+  width: 1184px;
+  font-size: 0;
+  margin-bottom: 70px;
+}
+
+.about__column-left,
+.about__column-right {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.about__subtitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  text-transform: none;
+  text-align: left;
+}
+
+.about__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: #4F4F4F;
+  text-align: left;
+  text-transform: none;
+  margin: 0;
 }
 
 }

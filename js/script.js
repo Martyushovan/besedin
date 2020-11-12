@@ -1,3 +1,22 @@
+$(document).ready(function(){ 
+
+  $(window).on('scroll', function(){
+    showScrollHeader();
+  });
+
+  showScrollTopBtn();
+  
+  function showScrollHeader() {
+    if( $(document).scrollTop() > 2060 ) {                
+      $('#logo').fadeIn(100);                      
+    }
+    else {                                               
+      $('#logo').fadeOut(100);
+    }
+  }
+  
+});
+
         
 function show_video1()
 {

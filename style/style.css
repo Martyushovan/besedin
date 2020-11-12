@@ -649,7 +649,9 @@ a {
 
 .nyusha:hover {
   background-image: url(../image/G66VYyEWk40.jpg);
-  transform: scale(1.1);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
 }
 
 .nyusha__position {

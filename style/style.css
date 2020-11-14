@@ -514,6 +514,13 @@ a {
   /*top: 856px;*/
 }
 
+.grom:hover {
+  background-image: url(../image/grom-h.jpg);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
+}
+
 .grom__position {
   font-size: 13px;
   line-height: 15px;
@@ -549,6 +556,13 @@ a {
   /*top: 856px;*/
 }
 
+.doctor:hover {
+  background-image: url(../image/chum-h.jpg);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
+}
+
 .doctor__position {
   font-size: 13px;
   line-height: 15px;
@@ -581,6 +595,13 @@ a {
   /*top: 1256px;*/
 }
 
+.iowa:hover {
+  background-image: url(../image/iowa-h.jpg);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
+}
+
 .iowa__position {
   font-size: 13px;
   line-height: 15px;
@@ -611,6 +632,13 @@ a {
   height: 400px;
   /*left: 720px;*/
   /*top: 1256px;*/
+}
+
+.iowa-m:hover {
+  background-image: url(../image/iowa-m-h.jpg);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
 }
 
 .iowa-m__position {
@@ -687,6 +715,13 @@ a {
   /*top: 1653px;*/
 }
 
+.leningrad:hover {
+  background-image: url(../image/leningrad-h.jpg);
+  background-size: 110%;
+  background-size: 0.1s;
+  /*transform: scale(1.1);*/
+}
+
 .leningrad__position {
   font-size: 13px;
   line-height: 15px;
@@ -729,12 +764,13 @@ a {
  max-width: 1440px;
  margin: 0 auto;
  color: #000;
+ margin-bottom: 225px;
 }
 
 .about__title {
   font-size: 48px;
   line-height: 60px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: none;
   color: #333333;
   text-align: left;

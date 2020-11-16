@@ -32,6 +32,7 @@ body {
    box-sizing: inherit;
   }
 
+h1,
 h2 {
   font-family: 'Prosto One', cursive;
   font-weight: normal;
@@ -104,15 +105,93 @@ a {
     color:white;
 }
 
+.nav,
+.nav-item,
+.logo,
+.about__subtitle-desktop,
+.shooting__text,
+.shooting__subtitle,
+..shooting__img-bottom {
+  display: none;
+}
+
+
+.promo {
+  width: 360px;
+  height: 748px;
+  margin: 0 auto;
+  background-image: url(../image/promo768.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 350px;
+}
+
+
+.burger {
+  width: 26px;
+  height: 1.44px;
+  margin-top: 4.33px;
+  margin-bottom: 4.33px;
+  background-color: #fff;
+ 
+}
+
+.burger-menu {
+ display: flex;
+ position: absolute;
+ align-items: center;
+ z-index: 1;
+ top: 24px;
+ right: 17px;
+ width: 26px;
+ height: 12.98px;
+ padding: 0;
+ border: none;
+ border-top: 2px solid #fff;
+ border-bottom: 2px solid #fff;
+ background: transparent;
+ cursor: pointer; 
+}
+
+.promo__title {
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  text-transform: uppercase;
+  /*padding-top: 392px;*/
+  letter-spacing: -0.015em;
+}
+
+.promo__subtitle {
+  font-size: 11px;
+  line-height: 26.97px;
+  letter-spacing: 0.2em;
+  color: #fff;
+
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 360px;
+  margin: auto;
+  margin-bottom: 53px;
+} 
+
 .grom {
-  /*position: absolute;*/
   background-image: url(../image/grom.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 640px;*/
 }
 
 .grom__position {
@@ -133,14 +212,11 @@ a {
 }
 
 .doctor {
-  /*position: absolute;*/
   background-image: url(../image/chum.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 839px;*/
 }
 
 .doctor__position {
@@ -158,14 +234,11 @@ a {
 }
 
 .iowa {
-  /*position: absolute;*/
   background-image: url(../image/iowa.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 1038px;*/
 }
 
 .iowa__position {
@@ -265,7 +338,157 @@ a {
   letter-spacing: 0.2em;  
 }
 
+.look {
+  width: 184px;
+  height: 32px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  margin: auto;
+  margin-bottom: 98px;
+  text-align: center; 
+  vertical-align: middle;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.about {
+ max-width: 360px;
+ margin: 0 auto;
+ color: #000;
+}
+
+.about__img {
+  display: block;
+  width: 360px;
+  height: 328px;
+  margin: 0 auto;
+  background-image: url(../image/about360.png);
+  margin-bottom: 72px;
+}
+
+.about__title {
+  font-size: 36px;
+  line-height: 42px;
+  padding-right: 38px;
+  padding-left: 17px;
+  font-weight: bolder;
+  text-transform: none;
+  color: #333333;
+  text-align: left;
+  margin: 0;
+}
+
+.shooting__title {
+  font-size: 36px;
+  line-height: 42px;
+  padding-right: 38px;
+  padding-left: 17px;
+  font-weight: bolder;
+  text-transform: none;
+  color: #333333;
+  text-align: left;
+  margin: 0;
+}
+
+.row {
+  display: block;
+  width: 360px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.column-left,
+.column-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column-right {
+  margin-left: 99px;
+}
+
+.about__subtitle,
+.shooting__subtitle-mobile {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 17px;
+  padding-right: 32px;
+  margin-bottom: 24px;
+  color: #828282;
+  text-transform: none;
+  text-align: left;
+}
+
+.about__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: #4F4F4F;
+  text-align: left;
+  text-transform: none;
+  margin: 0;
+}
+
+.shooting__quote-one {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4F4F4F;
+  text-transform: none;
+  text-align: left;
+  margin-top: 0;  
+}
+
+.shooting__cite {
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 80px;
+  text-transform: none;
+  text-align: left;
+  color: #828282;
+  font-weight: normal;
+}
+
+.shooting {
+  max-width: 360px;
+  margin: 0 auto;  
+}
+
+.shooting__img-top {
+  width: 360px;
+  height: 368px;
+  background-image: url(../image/shooting360.png);
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
+
+
+.burger-menu,
+.burger {
+  display: none;
+}  
+
+
+.promo {
+  width: 768px;
+  height: 857px;
+  margin: 0 auto;
+  background-image: url(../image/promo768.jpg);
+  background-position: center;
+  background-size: cover;
+}  
 
 .wrapper {
   display: flex;
@@ -279,14 +502,11 @@ a {
 
 
 .grom {
-  /*position: absolute;*/
   background-image: url(../image/grom.png);
   background-size: cover;
   background-position: center;
   width: 375.6px;
   height: 214px;
-  /*left: -1px;*/
-  /*top: 1024px;*/
 }
 
 .grom__position {
@@ -421,7 +641,12 @@ a {
 
 @media (min-width: 1440px) {
 
+.about__subtitle,
+.shooting__subtitle-mobile {
+  display: none;
+}  
 
+  
 #modal_form-grom,
 #modal_form-chum,
 #modal_form-iowa,
@@ -456,11 +681,9 @@ a {
   position: fixed;
   width: 1440px;
   height: 40px;
-  /*position: relative;*/
 }
 
 .logo {
-  /*position: absolute;*/
   margin-right: auto;
   padding-top: 33.3px;
   padding-left: 43.95px;
@@ -472,23 +695,20 @@ a {
   padding-top: 30px;
   right: 20px;
   margin-left: 1100px;
-
-
 } 
 
 .nav-item {
   margin-right: 20px;
 }
 
+.burger,
+.burger-menu {
+  display: none;
+}
+
 .wrapper {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*align-items: center;*/
   max-width: 1440px;
-  /*height: 1200px;*/
   margin: auto;
-  /*position: relative;*/
-  /*vertical-align: middle;*/
 }
 
 .work {
@@ -502,16 +722,11 @@ a {
 } 
 
 .grom {
-  /*flex-direction: row;*/
-  /*position: absolute;*/
   background-image: url(../image/grom-d.png);
   background-size: cover;
-  width: 713.2px;
+  width: 720px;
   height: 400px;
-
   margin: 0;
-  /*left: 0px;*/
-  /*top: 856px;*/
 }
 
 .grom:hover {
@@ -549,7 +764,7 @@ a {
   background-size: cover;
   
   /*position: absolute;*/
-  width: 713.2px;
+  width: 720px;
   height: 400px;
   margin: 0;
   /*left: 720px;*/
@@ -589,7 +804,7 @@ a {
   background-image: url(../image/iowa-d.png);
   background-size: cover;
   /*position: absolute;*/
-  width: 713.2px;
+  width: 720px;
   height: 400px;
   /*left: 0px;*/
   /*top: 1256px;*/
@@ -628,7 +843,7 @@ a {
   background-image: url(../image/iowa-m-d.png);
   background-size: cover;
   /*position: absolute;*/
-  width: 713.2px;
+  width: 720px;
   height: 400px;
   /*left: 720px;*/
   /*top: 1256px;*/
@@ -668,7 +883,7 @@ a {
   background-image: url(../image/nyusha-d.png);
   background-size: cover;
   /*position: absolute;*/
-  width: 713.2px;
+  width: 720px;
   height: 400px;
   overflow: hidden;
   /*left: 0px;*/
@@ -709,7 +924,7 @@ a {
   background-image: url(../image/leningrad-d.png);
   background-size: cover;
   /*position: absolute;*/
-  width: 713.2px;
+  width: 720px;
   height: 400px;
   /*left: 720px;*/
   /*top: 1653px;*/
@@ -754,7 +969,7 @@ a {
   background-color: #000;
   margin: auto;
   margin-bottom: 186px;
-  text-align: center;
+  text-align: center; 
   vertical-align: middle;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -767,51 +982,188 @@ a {
  margin-bottom: 225px;
 }
 
-.about__title {
+.about__img {
+  display: block;
+  width: 1184px;
+  height: 656px;
+  margin: 0 auto;
+  margin-bottom: 192px;
+  background-image: url(../image/about.png);
+}
+/*
+.about__img:hover {
+  display: block;
+  width: 1184px;
+  height: 656px;
+  margin: 0 auto;
+  background-image: url(../image/gif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+.about__title,
+.shooting__title {
   font-size: 48px;
   line-height: 60px;
-  font-weight: 700;
+  padding-left: 0;
+  font-weight: bolder;
   text-transform: none;
   color: #333333;
   text-align: left;
   margin: 0;
 }
 
-.about__row {
+.row {
   display: block;
   width: 1184px;
   font-size: 0;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
-.about__column-left,
-.about__column-right {
+.column-left,
+.column-right {
   display: inline-block;
   width: 50%;
   vertical-align: top;
+  margin-left: 0;
 }
 
-.about__subtitle {
+.about__subtitle-desktop,
+.shooting__subtitle {
+  display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  padding-right: 70px;
   color: #828282;
   text-transform: none;
   text-align: left;
 }
 
-.about__text {
+.about__text,
+.shooting__text {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 30px;
+  padding-right: 47px;
+  padding-top: 12px;  
   color: #4F4F4F;
   text-align: left;
   text-transform: none;
   margin: 0;
+}
+
+.shooting {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.shooting__row {
+  display: block;
+  width: 1184px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.shooting__subtitle {
+  padding-right: 94px;
+}
+
+.shooting__quote-one {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+} 
+
+.shooting__cite {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.shooting__img-top {
+  background-image: url(../image/shooting-b.png);
+  width: 1184px;
+  height: 656px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.shooting__img-bottom {
+  width: 1184px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+}
+
+.shooting__img-left {
+  display: inline-block;
+  background-image: url(../image/shooting-left.png);
+  width: 584px;
+  height: 672px;
+  margin-right: 16px;
+  float: left; 
+}
+
+.shooting__img-right-top {
+  display: inline-block;
+  background-image: url(../image/shooting-right-top.png);
+  width: 584px;
+  height: 328px;
+  margin-bottom: 16px;  
+}
+
+.shooting__img-right-bottom {
+  display: inline-block;
+  background-image: url(../image/shooting-right-bottom.png);
+  width: 584px;
+  height: 328px;
+}
+
+.shooting__container {
+  width: 1184px;
+  margin-bottom: 77px;
+
+}
+
+.shooting__quote-two {
+  font-size: 26px;
+  line-height: 38px;
+  color: #4F4F4F;
+  text-transform: none;
+  margin: 0;
+  padding-left: 600px;
+  padding-right: 22px;
+  text-align: left;
+}
+
+.shooting__img-two {
+  display: block;
+  background-image: url(../image/shooting-b-two.png);
+  width: 1184px;
+  height: 656px;
+  margin-bottom: 14px;
+}
+
+.shooting__img-two-left {
+  display: inline-block;
+  background-image: url(../image/shooting-b-two-left.png);
+  width: 584px;
+  height: 329px;
+  float: left;
+  margin-right: 16px;
+}
+
+.shooting__img-two-right {
+  display: inline-block;
+  background-image: url(../image/shooting-b-two-right.png);
+  width: 584px;
+  height: 329px;
 }
 
 }

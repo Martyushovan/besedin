@@ -1068,7 +1068,8 @@ a {
 }
 
 .shooting__row,
-.music__row {
+.music__row,
+.news__row {
   display: block;
   width: 1184px;
   font-size: 0;
@@ -1225,7 +1226,8 @@ a {
   text-transform: none; 
 }
 
-.shooting__btn {
+.shooting__btn,
+.news__btn {
   width: 192px;
   height: 40px;
   font-weight: 600;
@@ -1302,6 +1304,123 @@ a {
   width: 584px;
   height: 328px;
   margin-bottom: 99px;
+}
+
+.apple {
+  margin-bottom: 100px;
+}
+
+.news__left {
+  background-image: url(../image/news.png);
+  width: 592px;
+  height: 440px;
+}
+
+.news__time {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  text-transform: none;
+  padding-left: 30px;
+  text-align: left;
+  padding-top: 48px;
+  padding-right: 20px;
 } 
+
+.news__tittle {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: none;
+  color: #333333;
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.news__text {
+  font-size: 17px;
+  line-height: 27px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 20px;
+  text-transform: none;
+  color: #4F4F4F;
+}
+
+.news__btn {
+  margin-left: 30px;
+}
+
+.news__left-two {
+  background-image: url(../image/newa-two.png);
+  width: 594px;
+  height: 440px;
+}
+
+.news__tags-top {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #DF2A26;
+  padding-left: 30px;  
+}
+
+.news__tags-bottom {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #DF2A26;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.carousel {
+  width: 1184px;
+  color: #000;
+}
+
+.slick-arrow {
+  color: #000;
+  background: #000;
+}
+
+.slick-prev:before {
+    width: 40px;
+  height: 40px;
+  border-bottom: 3px solid #000;
+  border-left: 3px solid #000;
+  background: #000;
+  left: -20px;
+  top: -120px;
+  transform: rotate(45deg);
+  background: transparent;
+  position: absolute;
+}
+
+.slick-next:before {
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  background: #000;
+  left: -20px;
+  top: -120px;
+  transform: rotate(45deg);
+  background: transparent;
+  position: absolute;
+}
+
+
 
 }

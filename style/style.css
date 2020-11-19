@@ -1004,7 +1004,8 @@ a {
 
 .about__title,
 .shooting__title,
-.music__title {
+.music__title,
+.blog__title {
   font-size: 48px;
   line-height: 60px;
   padding-left: 0;
@@ -1050,7 +1051,7 @@ a {
 .shooting__text {
   font-family: Raleway;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 19px;
   line-height: 30px;
   padding-right: 47px;
@@ -1221,7 +1222,7 @@ a {
 .tags-item {
   font-size: 14px;
   line-height: 26px;
-  color: #DF2A26;
+  color: #FD243C;
   margin-right: 525px;
   text-transform: none; 
 }
@@ -1254,7 +1255,8 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-transform: none;
-  text-align: left;  
+  text-align: left;
+  color: #4F4F4F;  
 } 
 
 .music__one {
@@ -1271,6 +1273,7 @@ a {
   text-align: left;
   text-transform: none;
   margin: 0;
+  font-weight: 500;
 }
 
 .music__text-right {
@@ -1280,6 +1283,7 @@ a {
   padding-right: 39px;
   text-align: left;
   text-transform: none;
+  color: #4F4F4F;
 }
 
 .music__img-two {
@@ -1398,8 +1402,8 @@ a {
 .slick-prev:before {
     width: 40px;
   height: 40px;
-  border-bottom: 3px solid #000;
-  border-left: 3px solid #000;
+  border-bottom: 2px solid #828282;
+  border-left: 2px solid #828282;   
   background: #000;
   left: -20px;
   top: -120px;
@@ -1411,8 +1415,8 @@ a {
 .slick-next:before {
   width: 40px;
   height: 40px;
-  border-top: 3px solid #000;
-  border-right: 3px solid #000;
+  border-top: 2px solid #828282;
+  border-right: 2px solid #828282;
   background: #000;
   left: -20px;
   top: -120px;
@@ -1421,6 +1425,142 @@ a {
   position: absolute;
 }
 
+.blog {
+  width: 1184px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.blog__row {
+  display: block;
+  text-align: left;
+}
+
+.blog__column {
+  display: inline-block;
+  width: 29%;
+  margin-right: 17px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.blog__column-tags {
+  display: inline-block;
+  width: 8%;
+}
+
+.blog__title {
+  margin-bottom: 104px;
+}
+
+.blog__img {
+  margin-bottom: 49px;
+}
+
+.blog__subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.blog__text {
+  font-size: 17px;
+  line-height: 27px;
+  color: #4F4F4F;
+  text-transform: none;
+  padding-right: 14px;
+}
+
+.blog__time {
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  text-transform: none;
+}
+
+.blog__tags {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 0;
+}
+
+.blog__btn {
+  width: 192px;
+  height: 40px;
+  background: #333333;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+.blog__btn:hover {
+  background: #fff;
+  border: 1px solid #828282;
+  color: #333333;
+}
+
+ul {
+  padding: 0;
+} 
+
+.blog__tags-item {
+  font-size: 14px;
+  line-height: 26px;
+  color: #FD243C;
+  padding-left: 0;
+  text-transform: none;
+}
+
+.instagram {
+  margin: 0 auto;
+  margin-bottom: 199px;
+}
+
+.instagram__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 51px;
+  text-align: center;
+  color: #4F4F4F;
+  letter-spacing: 0.25em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.instagram__name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #828282;
+  text-transform: none;
+  margin-bottom: 56px;
+}
+
+.instagram__img {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+
+.instagram__img-item {
+  display: inline-block;
+  letter-spacing: 0em;
+  width: 361px;
+  height: 360px;
+}  
 
 
 }

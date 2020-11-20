@@ -1628,19 +1628,19 @@ ul {
 .footer__icon {
   display: inline-block;
   background: url(../image/css_sprites.png), no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   /*padding-top: 23px;*/
 }
 
-.whatsapp { background-position: -148px -10px; }
-.whatsapp:hover { background-position: -148px -56px; }
+.whatsapp { background-position: -10px -72px; }
+.whatsapp:hover { background-position: -72px -72px; }
 
-.talagram { background-position: -56px -10px;  }
-.talagram:hover { background-position: -10px -56px; }
+.talagram { background-position: -134px -10px;  }
+.talagram:hover { background-position: -134px -72px; }
 
-.facebook { background-position: -102px -56px;  }
-.facebook:hover { background-position: -10px -102px; }  
+.facebook { background-position: -10px -10px;  }
+.facebook:hover { background-position: -72px -10px; }  
 
 
 }

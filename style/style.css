@@ -258,14 +258,11 @@ a {
 } 
 
 .iowa-m {
-  /*position: absolute;*/
   background-image: url(../image/iowa-m.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 1238px;*/
 }
 
 .iowa-m__position {
@@ -285,14 +282,11 @@ a {
 }
 
 .nyusha {
-  /*position: absolute;*/
   background-image: url(../image/nyusha.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 1437px;*/
 }
 
 .nyusha__position {
@@ -312,14 +306,11 @@ a {
 }
 
 .leningrad {
-  /*position: absolute;*/
   background-image: url(../image/leningrad.png);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
-  /*left: 0px;*/
-  /*top: 1637px;*/
 }
 
 .leningrad__position {
@@ -973,13 +964,19 @@ a {
   vertical-align: middle;
   font-weight: 600;
   letter-spacing: 0.2em;
+  border: none;
+}
+
+.look:hover {
+  background: #fff;
+  border: 1px solid #828282;
+  color: #333333;
 }
 
 .about {
  max-width: 1440px;
  margin: 0 auto;
  color: #000;
- margin-bottom: 225px;
 }
 
 .about__img {
@@ -990,17 +987,6 @@ a {
   margin-bottom: 192px;
   background-image: url(../image/about.png);
 }
-/*
-.about__img:hover {
-  display: block;
-  width: 1184px;
-  height: 656px;
-  margin: 0 auto;
-  background-image: url(../image/gif.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
 
 .about__title,
 .shooting__title,
@@ -1241,6 +1227,14 @@ a {
   background: #333333;
   margin-right: 364px;
   margin-bottom: 169px;
+  border: none;
+}
+
+.shooting__btn:hover,
+.news__btn:hover {
+  background: #fff;
+  border: 1px solid #828282;
+  color: #333333;
 }
   
 .music__subtitle {
@@ -1302,6 +1296,20 @@ a {
   margin-bottom: 99px;
 }
 
+.music__img-left:hover {
+  display: inline-block;
+  width: 584px;
+  height: 328px;
+  margin: 0 auto;
+  background-image: url(../image/gif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 16px;
+  margin-bottom: 99px;
+}
+
+
 .music__img-right {
   display: inline-block;
   background-image: url(../image/music-right.png);
@@ -1355,6 +1363,7 @@ a {
 
 .news__btn {
   margin-left: 30px;
+  border: none;
 }
 
 .news__left-two {
@@ -1529,7 +1538,7 @@ ul {
 }
 
 .instagram__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 51px;
   text-align: center;
@@ -1560,7 +1569,78 @@ ul {
   letter-spacing: 0em;
   width: 361px;
   height: 360px;
-}  
+}
+
+.contact__row {
+  display: block;
+  width: 1184px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+.contact__column {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.contact__tittle {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #333333;
+  text-transform: none;
+  vertical-align: top;
+  margin: 0;  
+}
+
+.contact__item {
+  margin-bottom: 30px;
+
+}
+
+.contact__name {
+  font-size: 26px;
+  line-height: 38px;
+  color: #4F4F4F;
+  font-weight: bold;
+  text-transform: none;
+  margin: 0;
+}
+
+.contact__email {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4F4F4F;
+  text-transform: none;
+}
+
+.contact__tel {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 193.78%;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+
+.footer__icon {
+  display: inline-block;
+  background: url(../image/css_sprites.png), no-repeat;
+  width: 40px;
+  height: 40px;
+  /*padding-top: 23px;*/
+}
+
+.whatsapp { background-position: -148px -10px; }
+.whatsapp:hover { background-position: -148px -56px; }
+
+.talagram { background-position: -56px -10px;  }
+.talagram:hover { background-position: -10px -56px; }
+
+.facebook { background-position: -102px -56px;  }
+.facebook:hover { background-position: -10px -102px; }  
 
 
 }

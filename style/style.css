@@ -355,7 +355,7 @@ a {
 .look {
   width: 184px;
   height: 32px;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size: 10px;
   line-height: 12px;
   text-transform: uppercase;
@@ -365,7 +365,7 @@ a {
   margin-bottom: 98px;
   text-align: center; 
   vertical-align: middle;
-  font-weight: 600;
+  /*font-weight: 600;*/
   letter-spacing: 0.2em;
 }
 
@@ -428,8 +428,8 @@ a {
 
 .about__subtitle,
 .shooting__subtitle-mobile {
-  font-family: Raleway;
-  font-style: normal;
+  /*font-family: Raleway;*/
+  /*font-style: normal;*/
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -442,9 +442,9 @@ a {
 }
 
 .about__text {
-  font-family: Raleway;
+  /*font-family: Raleway;*/
   font-style: normal;
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 19px;
   line-height: 30px;
   color: #4F4F4F;
@@ -962,8 +962,8 @@ a {
 .leningrad__name {
   font-size: 48px;
   line-height: 60px;
-  margin-left: 134px;
-  margin-right: 134px;
+  margin-left: 160px;
+  margin-right: 160px;
   margin-bottom: 18px;
 }
 
@@ -975,7 +975,7 @@ a {
 .look {
   width: 267px;
   height: 40px;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
@@ -985,7 +985,7 @@ a {
   margin-bottom: 186px;
   text-align: center; 
   vertical-align: middle;
-  font-weight: 600;
+  /*font-weight: 600;*/
   letter-spacing: 0.2em;
   border: none;
 }
@@ -1045,9 +1045,9 @@ a {
 .shooting__subtitle,
 .music__subtitle {
   display: block;
-  font-family: Raleway;
+  /*font-family: Raleway;*/
   font-style: normal;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 16px;
   line-height: 24px;
   padding-right: 70px;
@@ -1058,13 +1058,14 @@ a {
 
 .about__text,
 .shooting__text {
-  font-family: Raleway;
+  /*font-family: Raleway;*/
   font-style: normal;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 19px;
   line-height: 30px;
   padding-right: 47px;
-  padding-top: 12px;  
+  padding-top: 12px;
+  padding-left: 11px;  
   color: #4F4F4F;
   text-align: left;
   text-transform: none;
@@ -1088,7 +1089,7 @@ a {
 }
 
 .shooting__quote-one {
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 26px;
   line-height: 38px;
 } 
@@ -1220,7 +1221,7 @@ a {
 
 .shooting__tags,
 .music__tags {
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.2em;
@@ -1240,7 +1241,7 @@ a {
 .news__btn {
   width: 192px;
   height: 40px;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   text-align: center;
@@ -1290,7 +1291,7 @@ a {
   text-align: left;
   text-transform: none;
   margin: 0;
-  font-weight: 500;
+  /*font-weight: 500;*/
 }
 
 .music__text-right {
@@ -1371,7 +1372,7 @@ a {
   text-transform: none;
   color: #333333;
   padding-left: 30px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .news__text {
@@ -1396,7 +1397,7 @@ a {
 }
 
 .news__tags-top {
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   text-align: center;
@@ -1409,7 +1410,7 @@ a {
 
 .news__tags-bottom {
   display: block;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   text-align: center;
@@ -1495,7 +1496,7 @@ a {
   letter-spacing: 0.02em;
   color: #333333;
   text-transform: none;
-  font-weight: 700;
+  /*font-weight: 700;*/
 }
 
 .blog__text {
@@ -1514,7 +1515,7 @@ a {
 }
 
 .blog__tags {
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.2em;
@@ -1527,7 +1528,7 @@ a {
   width: 192px;
   height: 40px;
   background: #333333;
-  font-weight: 600;
+  /*font-weight: 600;*/
   font-size: 11px;
   line-height: 13px;
   text-align: center;
@@ -1561,7 +1562,7 @@ ul {
 }
 
 .instagram__title {
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-size: 24px;
   line-height: 51px;
   text-align: center;
@@ -1572,7 +1573,7 @@ ul {
 }
 
 .instagram__name {
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -1610,7 +1611,7 @@ ul {
 }
 
 .contact__tittle {
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 48px;
   line-height: 60px;
   color: #333333;
@@ -1628,7 +1629,7 @@ ul {
   font-size: 26px;
   line-height: 38px;
   color: #4F4F4F;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-transform: none;
   margin: 0;
 }
@@ -1641,7 +1642,7 @@ ul {
 }
 
 .contact__tel {
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 22px;
   line-height: 193.78%;
   letter-spacing: 0.02em;

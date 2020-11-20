@@ -16,15 +16,36 @@
     font-display: swap;
 }
 
+font-face {
+    font-family: 'Montserrat';
+    src: url('subset-Montserrat-Bold.woff2') format('woff2'),
+        url('subset-Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('subset-Montserrat-Regular.woff2') format('woff2'),
+        url('subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
   font-size:  9px;
   color: #fff;
   line-height:  11px;
   text-align: center;
   text-transform: uppercase;
   box-sizing: border-box;
-  font-weight: 600;
+  /*font-weight: 600;*/
+  font-weight: normal;
   margin: 0 auto;
  }
 
@@ -34,8 +55,10 @@ body {
 
 h1,
 h2 {
-  font-family: 'Prosto One', cursive;
-  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Prosto One', cursive;*/
+  font-weight: bold;
+  /*font-weight: normal;*/
   font-size:  26px;
   line-height:  30px;
   text-align: center;
@@ -951,9 +974,9 @@ a {
 
 .look {
   width: 267px;
-  height: 65px;
+  height: 40px;
   font-family: 'Raleway', sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
   color: #fff;

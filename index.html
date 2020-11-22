@@ -14,15 +14,16 @@
 <div class="promo">
     <header class="header" data-header>
         <div class="logo" id="logo" data-logo>
-            <img src="image/logo.png" alt="">
+            <img class="logo__img" src="image/logo.png" alt="логотип">
         </div>
 
         <button class="burger-menu">
             <span class="burger"></span>
         </button>
         <nav class="nav">
-            <a class="nav-item" href="#">блог</a>
+            <a class="nav-item" href="#">работы</a>
             <a class="nav-item" href="#">контакты</a>
+            <a class="nav-item" href="#">блог</a>
             <a class="nav-item" href="#">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -34,10 +35,13 @@
     </header>
 
     <h1 class="visually-hidden">Режиссер Bладимир Беседин</h1>
-    <div class="promo__title">владимир беседин</div>
+    <h1 class="promo__title-mobile">владимир беседин</h1>
+    <h1 class="promo__title">владими</h1>
+    <img class="promo__title-img" src="./image/logo-promo.png" alt="Беседин">
     <p class="promo__subtitle">режиссер</p>
     <p class="promo__subtitle">продюсер</p>
     <p class="promo__subtitle">сценарист</p>
+    <a class="header__arrow arrow-img" href="#work"></a>
     <div>
 
     </div>
@@ -47,12 +51,12 @@
 <main>
     <!--    <div class="wrapper">-->
 
-    <section class="work">
+    <section id="work" class="work">
         <a href="#" rel="group" data-video="https://www.youtube.com/embed/RLt65JxNsWI" class="work__item">
             <div class="work__item-inner">
                 <div class="work__item-image work__item-image--grom"></div>
                 <div class="work__item-position grom__position">режиссер, продюсер и сценарист</div>
-                <h2 class="work__item-name grom__name">&laquo;майор гром&raquo;</h2>
+                <h2 class="work__item-name grom__name">&laquo;майор</br> гром&raquo;</h2>
                 <div class="work__item-subtitle grom__subtitle">короткометражный фильм</div>
             </div>
         </a>
@@ -110,10 +114,10 @@
     </section>
     <!-- end leningrad -->
 
-    <!--        <button class="look">посмотреть больше</button>-->
+            <button class="look">посмотреть больше</button>
 
     <div class="about">
-        <div class="row">
+        <div class="row about">
             <div class="column-left">
                 <h3 class="about__title">Владимир Беседин</h3>
                 <p class="about__subtitle">Режиссер, продюсер, сценарист. </br> Сооснователь и глава кинокомпании
@@ -122,9 +126,7 @@
                     BUBBLE Studios c 2015 по 2018 год</p>
             </div>
             <div class="column-right">
-                <p class="about__text">У Владимира Беседина западный подход к съемке, он учился у голливудских
-                    сценаристов и получал профессиональные консультации у продюсеров крупнейших американских
-                    кинокомпаний.</p>
+                <p class="about__text">У Владимира Беседина западный подход к съемке, он учился у голливудских сценаристов и получал профессиональные консультации у продюсеров крупнейших американских                  кинокомпаний.</p>
             </div>
         </div>
         <a class="about__img" href=""></a>
@@ -167,21 +169,16 @@
         </div>
         <div class="row">
             <div class="column-left">
-                <p class="shooting__text-left">Работа вместе с выдающимся оператором и инженером Сергеем
-                    Валентиновичем Астаховым</p>
+                <p class="shooting__text-left">Работа вместе с выдающимся оператором и инженером Сергеем Валентиновичем Астаховым</p>
                 <div class="shooting__img-mobole-three"></div>
             </div>
             <div class="column-right">
-                <p class="shooting__text-right">Мы проложили по дну машин жёлоб, куда была вмонтирована
-                    двенадцатиметровая монолитная рельса, по которой ездила камера, с помощью привода, размещенного
-                    на одном из концов</p>
+                <p class="shooting__text-right">Мы проложили по дну машин жёлоб, куда была вмонтирована двенадцатиметровая монолитная рельса, по которой ездила камера, с помощью привода, размещенного              на одном из концов</p>
             </div>
         </div>
 
         <div class="shooting__container">
-            <p class="shooting__quote-four">«Мы купили и выпотрошили 2 машины, сварили их между собой на необходимом
-                расстоянии, проложили по дну машин жёлоб, куда была вмонтирована двенадцатиметровая монолитная
-                рельса»</p>
+            <p class="shooting__quote-four">«Мы купили и выпотрошили 2 машины, сварили их между собой на необходимом расстоянии, проложили по дну машин жёлоб, куда была вмонтирована двенадцатиметровая монолитная              рельса»</p>
         </div>
 
         <div class="shooting__img-bottom-three">
@@ -199,11 +196,17 @@
 
             </div>
             <div class="column-right">
-                <p class="shooting__quote-three">«Мы боялись, что сьемка этого шота отнимет у нас очень много
-                    времени и мы вылетим из графика, но мы отрепетировали движение и сняли все за 40 минут. Это
-                    удивительно, но часто самое невероятное оказывается наименее проблемным. В итоге мы получили
+                <p class="shooting__quote-three">«Мы боялись, что сьемка этого шота отнимет у нас очень много времени и мы вылетим из графика, но мы отрепетировали движение и сняли все за 40 минут. Это удивительно, но часто самое невероятное оказывается наименее проблемным. В итоге мы получили
                     этот шикарный долгий кадр прямо на площадке»</p>
+                <p class="shooting__quote-three-mobile">Был риск, что сьемка этого шота отнимет у нас очень много времени и мы вылетим из графика, но мы отрепетировали движение и сняли все за 40 минут. Это           удивительно, но часто самое невероятное оказывается наименее проблемным. В итоге мы получили этот шикарный долгий кадр прямо на площадке»</p>
                 <button class="shooting__btn">читать далее</button>
+                <p class="tags-mobile">Метки в блоге</p>
+
+                <div class="tags-container">
+                  <a class="tags-item-mobile" href="">Режиссура</a>
+                  <a class="tags-item-mobile" href="">Майор Гром</a>
+                  <a class="tags-item-mobile" href="">Продакшн</a>
+                </div>
             </div>
         </div>
 
@@ -213,15 +216,11 @@
         <div class="music__row">
             <div class="column-left">
                 <h3 class="music__title">Работа с музыкой</h3>
-                <p class="music__subtitle">У Беседина особое отношение к музыке. Работа над саундтреками к его
-                    фильмам велась с лучшими музыкантами, на лучшей студии мира.</p>
+                <p class="music__subtitle">У Беседина особое отношение к музыке. Работа над саундтреками к его фильмам велась с лучшими музыкантами, на лучшей студии мира.</p>
             </div>
             <div class="column-right">
-                <p class="music__text">Владимир работает с композитором и саундпродюсером <a class="music__roman"
-                                                                                             href="https://www.kinopoisk.ru/name/2787666/">Романом
-                    Селиверстовым</a> и часто выступает как соавтор и сопродюсер. Творческий тандем дважды записывал
-                    оркестр на легендарной студии звукозаписи Abbey Road Studios (Лондон): для саундтрека к
-                    короткометражному фильму «Майор Гром» и тизеру полнометражног фильма «Майор Гром: Чумной Доктор»
+                <p class="music__text">Владимир работает с композитором и саундпродюсером <a class="music__roman" href="https://www.kinopoisk.ru/name/2787666/">Романом Селиверстовым</a> и часто выступает как соавтор и сопродюсер. Творческий тандем дважды записывал
+                оркестр на легендарной студии звукозаписи Abbey Road Studios (Лондон): для саундтрека к короткометражному фильму «Майор Гром» и тизеру полнометражног фильма «Майор Гром: Чумной Доктор»
                 </p>
             </div>
         </div>
@@ -230,8 +229,7 @@
 
         <div class="music__row">
             <div class="column-left">
-                <p class="music__text-left">Над записью саундрека работал расширенный состав оркестра, классные
-                    музыканты, которые каждую неделю записывают саундтреки для мировых франшиз</p>
+                <p class="music__text-left">Над записью саундрека работал расширенный состав оркестра, классные музыканты, которые каждую неделю записывают саундтреки для мировых франшиз</p>
             </div>
             <div class="column-right">
                 <p class="music__text-right">Несколько оригинальных треков Беседин и Селиверстов спродюсировали и
@@ -259,10 +257,18 @@
                     и записали в Нэшвилле (США) в сотрудничестве с обладателем «Грэмми» за альбом Red Hot Chili
                     Peppers — Stadium Arcadium инженером и продюсером Райаном Хьюиттом (Ryan Hewitt) и
                     микс-инженером Романом Уразовым (Manizha, Tesla Boy).</p>
+            </div>
                 <form action="https://beseginblog2.wordpress.com/2020/11/20/abbey_road/" target="blanc">
                     <button class="shooting__btn">читать далее</button>
+                    <p class="tags-mobile">Метки в блоге</p>
+
+                <div class="tags-container">
+                  <a class="tags-item-mobile" href="">Режиссура</a>
+                  <a class="tags-item-mobile" href="">Майор Гром</a>
+                  <a class="tags-item-mobile" href="">Продакшн</a>
+
                 </form>
-            </div>
+
 
             <iframe class="apple" allow="encrypted-media *; fullscreen *" frameborder="0" height="450"
                     style="width:100%;max-width:100%;overflow:hidden;background:transparent;"
@@ -274,6 +280,7 @@
 
         <div class="carousel" data-carousel>
             <div class="news__row slide">
+                    <div class="news__left-mobile"></div>
                 <div class="column-left">
                     <div class="news__left"></div>
                 </div>
@@ -296,8 +303,7 @@
                     <div class="news__left-two"></div>
                 </div>
                 <div class="column-right">
-                    <time class="news__time">22 октября 2019<a class="news__tags-top"
-                                                               href="https://tjournal.ru/tv/120338-rezhisser-pervogo-filma-po-rossiyskim-komiksam-mayor-grom-snimet-boevik-s-kolokolnikovym-intervyu-i-pervye-kadry">tjournal.ru</a>
+                    <time class="news__time">22 октября 2019<a class="news__tags-top"                            href="https://tjournal.ru/tv/120338-rezhisser-pervogo-filma-po-rossiyskim-komiksam-mayor-grom-snimet-boevik-s-kolokolnikovym-intervyu-i-pervye-kadry">tjournal.ru</a>
                     </time>
                     <h3 class="news__tittle">Режиссёр первого фильма по российским комиксам «Майор Гром» снимет
                         боевик с Колокольниковым. Интервью и первые кадры</h3>
@@ -314,6 +320,17 @@
 
     <section class="blog">
         <h3 class="blog__title">Читать в блоге</h3>
+        <aricle class="blog__column-mobile">
+                <img class="blog__img-mobile" src="image/blog-left-m.png" alt="">
+                <time class="blog__time">29 апреля 2020</time>
+                <h4 class="blog__subtitle">Большой пост про раскадровку</h4>
+                <p class="blog__text">У каждого режиссера свой подход. Здесь о моем. Я жить не могу без моих корешей
+                    из банды пре-продакшна: раскадровки, репетиции, тесты, прешуты! Вероятно, я не открою Америку,
+                    сказав, как важен пре-продакшн.</p>
+                <form action="https://beseginblog2.wordpress.com/2020/11/19/raskadrovka/" target="blanc">
+                    <button class="blog__btn">читать далее</button>
+                </form>
+            </aricle>
         <div class="blog__row">
             <aricle class="blog__column">
                 <img class="blog__img" src="image/blog-left.png" alt="">
@@ -361,6 +378,27 @@
                 </ul>
             </div>
         </div>
+        <div class="tags-mobile">
+                <span class="blog__tags">метки в блоге</span>
+
+                <div class="tags__row">
+                  <div class="blog__tags-column">
+                    
+                    <a class="tags-item-mobile" href="">Bubble Studios</a>
+                    <a class="tags-item-mobile" href="">Майор Гром</a>
+                    <a class="tags-item-mobile" href="">Саундтрек</a>
+                </div>
+                <div class="blog__tags-column">
+                    
+                    <a class="tags-item-mobile" href="">Bubble Studios</a>
+                    <a class="tags-item-mobile" href="">Майор Гром</a>
+                    <a class="tags-item-mobile" href="">Саундтрек</a>
+                </div>
+                </div>      
+                    
+                    
+               
+            </div>
     </section>
 
     <!--    </div>-->
@@ -369,10 +407,13 @@
         <h4 class="instagram__title">instagram</h4>
         <p class="instagram__name">@vovabesedin</p>
         <div class="instagram__img">
+        <div class="carousel" data-carousel>
             <img class="instagram__img-item" src="image/inst4.png" alt="">
             <img class="instagram__img-item" src="image/inst3.png" alt="">
             <img class="instagram__img-item" src="image/inst2.png" alt="">
             <img class="instagram__img-item" src="image/inst1.png" alt="">
+            
+        </div>
         </div>
     </section>
 

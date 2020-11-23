@@ -149,8 +149,8 @@ a {
 }
 
 .nav,
-.nav-item,
-.logo,
+/*.nav-item,*/
+/*.logo,*/
 .logo__img,
 .promo__title-img,
 .promo__title,
@@ -164,7 +164,8 @@ a {
 .music__tags,
 .apple,
 .blog__img,
-.blog__row {
+.blog__row,
+.music-btn {
     display: none;
 }
 
@@ -359,7 +360,7 @@ a {
     color: #fff;
     background-color: #000;
     margin: auto;
-    margin-bottom: 98px;
+    /*margin-bottom: 98px;*/
     text-align: center;
     vertical-align: middle;
     letter-spacing: 0.2em;
@@ -535,7 +536,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*width: 360px;*/
     height: 320px;
     margin-bottom: 14px;
 }
@@ -887,6 +887,7 @@ a {
 
 @media (min-width: 1024px) {
 
+    .promo__subtitle,
     .about__subtitle,
     .shooting__subtitle-mobile,
     .shooting__cite-mobile,
@@ -898,12 +899,13 @@ a {
     .blog__column-mobile,
     .blog__column-tags-mobile,
     .tags-mobile,
-    .tags-item-mobile {
+    .tags-item-mobile,
+    .instagram-mobile {
         display: none;
     }
 
     .promo {
-        width: 1440px;
+        width: 100%;
         height: 857px;
         margin: 0 auto;
         background-image: url(../image/promo-b.png);
@@ -925,8 +927,18 @@ a {
         background: #ffffff;
     }
 
+    .header--shown .nav {
+     margin-left: 550px;
+
+    }
+
     .header--shown .nav-item {
+      text-align: left;
         color: #828282;
+    }
+
+    .header--shown .inner {
+      color: transparent;
     }
 
     .header--shown .nav-item svg path {
@@ -934,12 +946,19 @@ a {
     }
 
     .logo {
-        margin-right: auto;
-        padding-left: 44px;
-        padding-top: 15px;
-        opacity: 0;
-        transition: all 300ms;
-        pointer-events: none;
+      display: block;
+      margin-right: auto;
+      padding-left: 44px;
+      padding-top: 15px;
+      opacity: 0;
+      transition: all 300ms;
+      pointer-events: none;
+    }
+
+    .logo__img {
+      display: block;
+      width: 144px;
+      height: 94px;
     }
 
     .logo--shown {
@@ -948,17 +967,27 @@ a {
     }
 
     .nav {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
-        right: 20px;
-        margin-left: 1100px;
+        text-align: center;
+        vertical-align: middle;
+      
     }
 
     .nav-item {
-        margin-right: 20px;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-right: 20px;
     }
 
     .nav-item svg path {
         fill: #ffffff;
+        margin-right: 80px;
     }
 
     .burger,
@@ -967,7 +996,7 @@ a {
     }
 
     .header__arrow {
-      margin-top: 90px;
+      margin-top: 800px;
     }
 
     .wrapper {
@@ -978,7 +1007,7 @@ a {
     .work {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1440px;
+        max-width: 100%;
         margin: auto;
         margin-bottom: 53px;
     }
@@ -1250,17 +1279,23 @@ a {
 
     .shooting__container {
         width: 1184px;
-        margin-bottom: 77px;
+        margin: 0 auto;
+
 
     }
 
     .shooting__quote-two,
     .shooting__quote-four {
+        display: block;
+        width: 100%;
         font-size: 26px;
         line-height: 38px;
+        font-weight: bold;
         color: #4F4F4F;
         text-transform: none;
         margin: 0;
+        margin-bottom: 77px;
+        margin-top: 77px;
         padding-left: 600px;
         padding-right: 22px;
         text-align: left;
@@ -1271,7 +1306,7 @@ a {
         background-image: url(../image/shooting-b-two.png);
         width: 1184px;
         height: 656px;
-        margin-bottom: 14px;
+        /*margin-bottom: 14px;*/
         margin: 0 auto;
     }
 
@@ -1292,7 +1327,10 @@ a {
     }
 
     .shooting__img-bottom-two {
+        width: 1184px;
+        margin-top: 14px;
         margin-bottom: 7px;
+        margin: 0 auto;
     }
 
     .shooting__text-left,
@@ -1330,6 +1368,7 @@ a {
     }
 
     .shooting__quote-three {
+        display: block;
         font-size: 18px;
         line-height: 30px;
         color: #4F4F4F;
@@ -1377,6 +1416,7 @@ a {
         border: none;
     }
 
+
     .shooting__btn:hover,
     .news__btn:hover {
         background: #fff;
@@ -1386,6 +1426,7 @@ a {
 
     .music__subtitle {
         padding-right: 68px;
+        padding-left: 0;
     }
 
     .music__text {
@@ -1462,7 +1503,13 @@ a {
     }
 
     .apple {
-        margin-bottom: 100px;
+      display: block;
+        margin-bottom: 70px;
+    }
+
+    .music-btn {
+      display: block;
+      text-align: center;
     }
 
     .news__left {
@@ -1544,6 +1591,7 @@ a {
     .carousel {
         width: 1184px;
         color: #000;
+        margin: 0 auto;
     }
 
     .slick-arrow {
@@ -1607,6 +1655,7 @@ a {
     }
 
     .blog__img {
+      display: block;
         margin-bottom: 49px;
     }
 

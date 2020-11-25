@@ -165,7 +165,9 @@ a {
 .apple,
 .blog__img,
 .blog__row,
-.music-btn {
+.music-btn,
+.work__item.bi,
+.promo__position-desktop {
     display: none;
 }
 
@@ -915,7 +917,7 @@ a {
     .promo {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 200%;
         margin: 0 auto;
         background-image: url(../image/promo-b.png);
         background-position: top;
@@ -950,9 +952,27 @@ a {
 
     .promo__title-img {
       display: block;
-      position: absolute;
-      left: 400px;
-      top: 260px;
+      margin: 0 auto;
+      
+     
+    }
+
+    .promo__position-desktop {
+      display: block;      
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      /*height: 20%;*/
+      
+    }
+
+    .promo__subtitle-desktop {
+      font-size: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-right: 20px;
+
     }
 
     .header--shown {
@@ -1028,8 +1048,13 @@ a {
     }
 
     .header__arrow {
-      display: block;
-      margin-top: 335px;
+      /*display: block;*/
+      /*margin-top: 335px;*/
+    }
+
+    .work__item.bi {
+      margin-bottom: 0;
+      padding-top: 59px;
     }
 
     .wrapper {
@@ -1037,16 +1062,9 @@ a {
         margin: auto;
     }
 
-    /*.work {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        margin: auto;
-        margin-bottom: 53px;
-    }*/
-
     .work {
         display: flex;
+        flex-direction: column;
         background-image: url(../image/work.png);
         flex-wrap: wrap;
         max-width: 100%;
@@ -1063,7 +1081,7 @@ a {
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 56px;
     }
 
     .work__item-inner:after {

@@ -169,7 +169,8 @@ a {
 .blog__row,
 .news__btn,
 .work__item.bi,
-.promo__position-desktop {
+.promo__position-desktop,
+.instagram {
     display: none;
 }
 
@@ -687,6 +688,7 @@ a {
 }
 
 .tags-mobile {
+  display: block;
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.2em;
@@ -822,6 +824,8 @@ a {
 }
 
 .blog__img-mobile {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -839,7 +843,7 @@ a {
   margin: 0 auto;
   font-size: 0;
   margin-top: 20px; 
-  margin-bottom: 100px;
+  margin-bottom: 105px;
 }
 
 .blog__tags-column {
@@ -852,6 +856,10 @@ a {
   line-height: 26px;
   color: #FD243C;
   text-decoration: none;
+}
+
+.instagram-mobile {
+  margin-bottom: 105px;
 }
 
 .instagram__title {
@@ -872,9 +880,8 @@ a {
   text-transform: none;
 }
 
-.instagram__img {
-  /*display: inline-block;*/
-  /*height: 192px;*/
+footer {
+  margin-bottom: 100px;
 }
 
 .contact__tittle {

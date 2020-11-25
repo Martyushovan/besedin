@@ -161,11 +161,13 @@ a {
 .column-right,
 .shooting__quote-three,
 .shooting__quote-four,
+.music__btn,
+.music.look,
 .music__tags,
 .apple,
 .blog__img,
 .blog__row,
-.music-btn,
+.news__btn,
 .work__item.bi,
 .promo__position-desktop {
     display: none;
@@ -469,9 +471,8 @@ a {
 .blog__title {
     font-size: 36px;
     line-height: 42px;
-    /*padding-right: 38px;*/
     padding-left: 17px;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: none;
     color: #333333;
     text-align: left;
@@ -644,8 +645,8 @@ a {
 }
 
 .shooting__btn,
-.shooting__btn,
-.news__btn,
+.music__btn-mobile,
+.news__btn-mobile,
 .blog__btn {
   width: 192px;
   height: 40px;
@@ -654,7 +655,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 52px;
   text-align: center;
   vertical-align: middle;
@@ -666,7 +667,9 @@ a {
 
 .shooting__btn:hover,
 .shooting__btn:hover,
+.music__btn-mobile:hover,
 .news__btn:hover,
+.news__btn-mobile:hover,
 .blog__btn:hover {
   background-color: #fff;
   color: #333333;
@@ -796,6 +799,16 @@ a {
   text-align: left;
   text-transform: none;
   padding-left: 17px;
+}
+
+.btn__inner {
+  text-align: left;
+}
+
+.news__btn-mobile,
+.blog__btn {
+  display: inline-block;
+  margin-left: 17px;
 }
 
 .slick-arrow.slick-prev,
@@ -949,6 +962,7 @@ a {
     .shooting__quote-three-mobile,
     .shooting__tags-mobile,
     .promo__title-mobile,
+    .news__btn-mobile,
     .news__left-mobile,
     .blog__column-mobile,
     .blog__column-tags-mobile,

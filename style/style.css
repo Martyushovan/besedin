@@ -156,6 +156,7 @@ a {
 .promo__title-img,
 .promo__title,
 .promo__text,
+.work,
 .about__subtitle-desktop,
 .shooting__text,
 .shooting__subtitle,
@@ -169,6 +170,9 @@ a {
 .apple,
 .blog__img,
 .blog__row,
+.slick-arrow,
+.slick-prev.slick-arrow
+.slick-next,
 .news__btn,
 .work__item.bi,
 .promo__position-desktop,
@@ -177,6 +181,7 @@ a {
 }
 
 .promo {
+  width: 100%;
     height: 623px;
     margin: 0 auto;
     background-image: url(../image/promo360.png);
@@ -302,7 +307,7 @@ a {
 }
 
 
-.work {
+.work-mobile {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 24px;
@@ -382,6 +387,11 @@ a {
 .work__item-subtitle {
     letter-spacing: 0.2em;
     z-index: 1;
+}
+
+.work__item-name.grom__name {
+    height: initial;
+    margin-bottom: 45px;
 }
 
 .work__item-name.doctor__name {
@@ -763,7 +773,7 @@ a {
 
 .news__left-mobile {
   display: block;
-  background-image: url(../image/news-m.png);
+  background-image: url(../image/news.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -964,6 +974,7 @@ footer {
 @media (min-width: 1024px) {
 
     .promo__subtitle,
+    .work-mobile,
     .about__subtitle,
     .shooting__subtitle-mobile,
     .shooting__cite-mobile,
@@ -1503,6 +1514,7 @@ footer {
 
     .shooting__quote-four {
       padding-left: 10px;
+      font-weight: 500;
       margin-top: 0;
       text-transform: uppercase;
       padding-right: 0;
@@ -1628,7 +1640,8 @@ footer {
 
 
     .shooting__btn:hover,
-    .news__btn:hover {
+    .news__btn:hover,
+    .music__btn:hover {
         background: #fff;
         border: 1px solid #828282;
         color: #333333;
@@ -1816,16 +1829,22 @@ footer {
         text-align: left;
     }
 
+    .news__tags-bottom:hover,
+    .news__tags-top:hover {
+      text-decoration: underline;
+    }
+
     .carousel {
         width: 1184px;
         color: #000;
         margin: 0 auto;
+        position: relative;
     }
 
     .slick-arrow {
-        display: block;
-        color: #000;
-        background: #000;
+        /*display: block;*/
+        /*color: #000;*/
+        /*background: #000;*/
     }
 
     .slick-prev:before {

@@ -139,7 +139,7 @@ a {
     width: 21px;
     height: 21px;
     position: absolute;
-    top: 10px;
+    top: 100px;
     right: 10px;
     cursor: pointer;
     display: block;
@@ -970,6 +970,7 @@ footer {
     .shooting__quote-three-mobile,
     .shooting__tags-mobile,
     .promo__title-mobile,
+    .music__btn-mobile,
     .news__btn-mobile,
     .news__left-mobile,
     .blog__column-mobile,
@@ -989,7 +990,7 @@ footer {
     .promo {
         display: block;
         width: 100%;
-        height: 1470px;
+        height: 1570px;
         margin: 0 auto;
         background-image: url(../image/promo-b.png);
         background-position: top;
@@ -1149,19 +1150,18 @@ footer {
     .work {
         display: flex;
         flex-direction: column;
-      /*  background-image: url(../image/work1.png);
-        background-repeat: no-repeat;
-        background-size: cover;*/
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 53px;
+        
     }
 
     .work-background-darc {
       background-image: url(../image/work1.png);
       background-repeat: no-repeat;
       background-size: cover;
+      top: -1px;
     }
 
     .work-background-l {
@@ -1241,23 +1241,25 @@ footer {
         font-size: 13px;
         line-height: 15px;
         margin-top: 38px;
-        margin-bottom: 95px;
+        margin-bottom: 3%;
         letter-spacing: 0.2em;
     }
 
     .bar {
+      display: block;
+      height: 56px;
+      width: 1px;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-bottom: 5%;  
 
     }
 
     .work__item-name {
         font-size: 48px;
         line-height: 60px;
-        height: 63px;
+        /*height: 63px;*/
         margin-bottom: 80px;
-    }
-
-    .work__item-name.bi__name {
-        margin-bottom: 25px;
     }
 
     .work__item-name.doctor__name {
@@ -1284,6 +1286,7 @@ footer {
     .work__item-subtitle {
         font-size: 13px;
         line-height: 15px;
+        margin-bottom: 3%;  
     }
 
     .look {
@@ -1557,6 +1560,7 @@ footer {
 
     .shooting__tags,
     .music__tags {
+      display: block;
         /*font-weight: 600;*/
         font-size: 11px;
         line-height: 13px;
@@ -1575,7 +1579,8 @@ footer {
     }
 
     .shooting__btn,
-    .news__btn {
+    .news__btn,
+    .music__btn {
         width: 192px;
         height: 40px;
         /*font-weight: 600;*/
@@ -1597,6 +1602,10 @@ footer {
         background: #fff;
         border: 1px solid #828282;
         color: #333333;
+    }
+
+    .music {
+      margin-bottom: 190px;
     }
 
     .music__subtitle {
@@ -1633,7 +1642,7 @@ footer {
         font-size: 18px;
         line-height: 30px;
         padding-top: 97px;
-        padding-right: 39px;
+        margin-left: 39px;
         text-align: left;
         text-transform: none;
         color: #4F4F4F;
@@ -1680,11 +1689,18 @@ footer {
     .apple {
       display: block;
         margin-bottom: 70px;
+        margin-top: 70px;
     }
 
-    .music-btn {
+    .music__btn {
       display: block;
-      text-align: center;
+      margin-left: 17px;
+      /*text-align: center;*/
+
+    }
+
+    .music.look {
+      display: block;
     }
 
     .news {
@@ -1722,7 +1738,7 @@ footer {
         text-transform: none;
         color: #333333;
         padding-left: 30px;
-        /*font-weight: bold;*/
+        margin-bottom: 0;
     }
 
     .news__text {
@@ -1733,6 +1749,7 @@ footer {
         padding-right: 20px;
         text-transform: none;
         color: #4F4F4F;
+        margin-bottom: 10px;
     }
 
     .news__btn {
@@ -1747,25 +1764,22 @@ footer {
     }
 
     .news__tags-top {
-        /*font-weight: 600;*/
         font-size: 11px;
         line-height: 13px;
         text-align: center;
         letter-spacing: 0.2em;
-        text-decoration-line: underline;
         text-transform: uppercase;
         color: #DF2A26;
         padding-left: 30px;
+     
     }
 
     .news__tags-bottom {
         display: block;
-        /*font-weight: 600;*/
         font-size: 11px;
         line-height: 13px;
         text-align: center;
         letter-spacing: 0.2em;
-        text-decoration-line: underline;
         text-transform: uppercase;
         color: #DF2A26;
         margin-left: 30px;

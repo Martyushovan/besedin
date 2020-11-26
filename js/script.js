@@ -4,6 +4,12 @@ $(document).ready(function () {
   let player;
   let done = false;
 
+  $("#toggler").click(function() {
+    $(this).toggleClass("open-menu");
+    $("#nav").toggleClass("nav--open");
+    $(".header").toggleClass("header")
+  });
+
   $("[data-carousel]").slick({
     infinite: true,
     slidesToShow: 1,

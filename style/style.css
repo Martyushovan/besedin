@@ -47,6 +47,7 @@ body {
     /*font-weight: 600;*/
     font-weight: normal;
     margin: 0 auto;
+    /*overflow-y:hidden*/
 }
 
 body.modal-open {
@@ -2005,7 +2006,7 @@ footer {
     .instagram__img-item {
         display: inline-block;
         letter-spacing: 0em;
-        width: 361px;
+        width: 25%;
         height: 360px;
     }
 

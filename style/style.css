@@ -1035,7 +1035,7 @@ footer {
       width: 100%;
       text-align: center;
       vertical-align: middle;
-      padding-bottom: 182px;
+      padding-bottom: 163px;
       
     }
 
@@ -1500,7 +1500,8 @@ footer {
 
     .shooting__img-two-right {
         display: inline-block;
-        background-image: url(../image/shooting-b-two-right.png);
+        background-image: url(../image/shooting-b-two-right.jpg);
+        background-size: cover;
         width: 584px;
         height: 329px;
     }
@@ -1509,6 +1510,7 @@ footer {
         width: 1184px;
         margin-bottom: 7px;
         margin: 0 auto;
+        margin-top: 14px;
     }
 
     .shooting__text-left,

@@ -1093,6 +1093,7 @@ footer {
     .music__btn-mobile,
     .news__btn-mobile,
     .news__left-mobile,
+    .news__left-two-mobile,
     .blog__column-mobile,
     .blog__column-tags-mobile,
     .tags-mobile,
@@ -1666,7 +1667,7 @@ footer {
 
     .shooting__img-two-right {
         display: inline-block;
-        background-image: url(../image/shooting-b-two-right.jpg);
+        background-image: url(../image/movie3.gif);
         background-size: cover;
         width: 584px;
         height: 329px;
@@ -1833,25 +1834,25 @@ footer {
 
     .music__img-left {
         display: inline-block;
-        background-image: url(../image/music-left.png);
+        background-image: url(../image/Besedin_music_008.gif);
         width: 584px;
         height: 328px;
         margin-right: 16px;
         margin-bottom: 99px;
     }
 
-    .music__img-left:hover {
-        display: inline-block;
-        width: 584px;
-        height: 328px;
-        margin: 0 auto;
-        background-image: url(../image/gif.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-right: 16px;
-        margin-bottom: 99px;
-    }
+     /* .music__img-left:hover {
+          display: inline-block;
+          width: 584px;
+          height: 328px;
+          margin: 0 auto;
+          background-image: url(../image/gif.gif);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 16px;
+          margin-bottom: 99px;
+      }*/
 
 
     .music__img-right {

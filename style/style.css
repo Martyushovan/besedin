@@ -1883,6 +1883,7 @@ footer {
     .news {
       width: 1184px;
       margin: 0 auto;
+      margin-bottom: 100px;
     }
 
     .news__title {

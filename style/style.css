@@ -431,6 +431,10 @@ a {
     top: 0;
 }
 
+.work__item-image--bi {
+    background-image: url(../image/bi.png);
+}
+
 .work__item-image--grom {
     background-image: url(../image/grom.png);
 }
@@ -568,6 +572,7 @@ a {
 
 .shooting__title,
 .music__title,
+.news__title,
 .blog__title {
     font-size: 36px;
     line-height: 42px;
@@ -834,9 +839,6 @@ a {
   height: 320px;
 }
 
-.music__text {
-  margin-left: 16px;
-} 
 
 .music__text,
 .music__text-left,
@@ -1350,7 +1352,7 @@ footer {
     }
 
     .work__item-image--iowa-m {
-        background-image: url(../image/iowa-m-h.jpg);
+        background-image: url(../image/iowa-m-h.png);
     }
 
     .work__item-image--nyusha {
@@ -1791,6 +1793,7 @@ footer {
         text-transform: none;
         text-align: left;
         color: #4F4F4F;
+        margin-left: 16px;
     }
 
     .music__one {

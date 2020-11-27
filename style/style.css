@@ -303,6 +303,11 @@ a {
     height: 40px;
     margin-bottom: 213px;
 }
+/*
+.nav-item.icon {
+  width: 40px;
+  height: 40px;
+}*/
 
 
 
@@ -620,28 +625,18 @@ a {
     margin-left: 99px;
   }
 
-.shooting__quote-one {
-    font-weight: bold;
+.shooting__quote-one,
+.shooting__quote-two,
+.shooting__quote-three-mobile {
+    font-weight: 500;
     font-size: 15px;
     line-height: 24px;
     color: #4F4F4F;
-    text-transform: none;
+    text-transform: uppercase;
     text-align: left;
     margin-top: 0;
     padding-left: 99px;
-}
-
-.shooting__cite,
-.shooting__cite-mobile {
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 70px;
-    margin-bottom: 80px;
-    padding-left: 99px;
-    text-transform: none;
-    text-align: left;
-    color: #828282;
-    font-weight: normal;
+    margin-bottom: 50px;
 }
 
 .shooting {
@@ -660,7 +655,7 @@ a {
     margin-bottom: 92px;
 }
 
-.shooting__quote-two {
+/*.shooting__quote-two {
     font-weight: bold;
     font-size: 15px;
     line-height: 26px;
@@ -668,7 +663,7 @@ a {
     text-transform: none;
     margin-left: 99px;
     text-align: left;
-}
+}*/
 
 /*.shooting__cite-mobile {
     font-size: 14px;
@@ -710,6 +705,16 @@ a {
     padding-left: 16px;
 }
 
+.shooting__container-img {
+  padding-right: 117px;
+  padding-bottom: 10px;
+}
+
+.shooting__container-img.quote-three {
+  position: absolute;
+
+}
+
 .shooting__img-mobole-three {
     display: inline-block;
     background-image: url(../image/shooting-m-two-right.png);
@@ -737,6 +742,7 @@ a {
 
 .shooting__quote-three-mobile {
   margin-bottom: 40px;
+  padding-left: 0;
 }
 
 .shooting__btn,
@@ -828,6 +834,10 @@ a {
   height: 320px;
 }
 
+.music__text {
+  margin-left: 16px;
+} 
+
 .music__text,
 .music__text-left,
 .music__text-right {
@@ -863,6 +873,19 @@ a {
   height: 320px;
   margin-bottom: 23px;
 }
+
+.news__left-two-mobile {
+  display: block;
+  background-image: url(../image/newa-two.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  margin-bottom: 23px;
+}
+
+
 
 .news__time,
 .blog__time {
@@ -1060,9 +1083,8 @@ footer {
     .work-mobile,
     .about__subtitle,
     .shooting__subtitle-mobile,
-    .shooting__cite-mobile,
-    .shooting__cite,
     .shooting__img-mobole-three,
+    .shooting__container-img.quote-one,
     .shooting__quote-three-mobile,
     .shooting__tags-mobile,
     .promo__title-mobile,
@@ -1088,7 +1110,7 @@ footer {
         width: 100%;
         height: 1570px;
         margin: 0 auto;
-        background-image: url(../image/promo-b.jpg);
+        background-image: url(../image/promo-b.png);
         background-position: top;
         background-size: cover;
         position: relative;
@@ -1145,6 +1167,7 @@ footer {
     }
 
     .promo__text {
+      display:  block;
       font-size: 18px;
       font-weight: 800;
       line-height: 38px;
@@ -1232,9 +1255,10 @@ footer {
 
     .header__arrow {
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 23px;
+      height: 27px;
       margin-top: 0;
+      margin: 0 auto; 
     }
 
     .work__item.bi {
@@ -1363,6 +1387,15 @@ footer {
         margin-bottom: 80px;
     }
 
+    .work__item-name.bi__name {
+        margin-bottom: 25px;
+    }
+
+
+    .work__item-name.grom__name {
+        margin-bottom: 25px;
+    }
+
     .work__item-name.doctor__name {
         margin-bottom: 25px;
     }
@@ -1452,6 +1485,7 @@ footer {
         font-size: 0;
         margin: 0 auto;
         margin-bottom: 70px;
+        /*position: relative;*/
     }
 
     .column-left,
@@ -1690,6 +1724,11 @@ footer {
         margin-bottom: 30px;
     }
 
+    .column-right.mobile {
+      position: relative;
+    
+    }
+
     .shooting__tags,
     .music__tags {
       display: block;
@@ -1768,6 +1807,7 @@ footer {
         text-align: left;
         text-transform: none;
         margin: 0;
+        padding-left: 0;
         /*font-weight: 500;*/
     }
 
@@ -1883,6 +1923,7 @@ footer {
         text-transform: none;
         color: #4F4F4F;
         margin-bottom: 10px;
+        font-weight: 500;
     }
 
     .news__btn {
@@ -1944,7 +1985,7 @@ footer {
         border-left: 2px solid #828282;
         background: #000;
         left: -20px;
-        top: -120px;
+        top: -20px;
         transform: rotate(45deg);
         background: transparent;
         position: absolute;
@@ -1957,7 +1998,7 @@ footer {
         border-right: 2px solid #828282;
         background: #000;
         left: -20px;
-        top: -120px;
+        top: -10px;
         transform: rotate(45deg);
         background: transparent;
         position: absolute;

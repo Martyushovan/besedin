@@ -281,7 +281,7 @@ a {
 .slick-prev.slick-arrow
 .slick-next,
 .news__btn,
-.work__item.bi,
+/*.work__item.bi,*/
 .promo__position-desktop,
 .instagram {
     display: none;
@@ -1590,7 +1590,7 @@ footer {
 
     .shooting__img-right-bottom {
         display: inline-block;
-        background-image: url(../image/shooting-right-bottom.png);
+        background-image: url(../image/movie3.gif);
         width: 584px;
         height: 328px;
     }
@@ -1667,7 +1667,7 @@ footer {
 
     .shooting__img-two-right {
         display: inline-block;
-        background-image: url(../image/movie3.gif);
+        background-image: url(../image/shooting-b-two-right.jpg);
         background-size: cover;
         width: 584px;
         height: 329px;
@@ -1989,7 +1989,7 @@ footer {
         border-left: 2px solid #828282;
         background: #000;
         left: -20px;
-        top: -20px;
+        top: -10px;
         transform: rotate(45deg);
         background: transparent;
         position: absolute;

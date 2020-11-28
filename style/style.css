@@ -149,7 +149,7 @@ a {
     z-index: 10;
 }
 
-.toggler-menu {
+/*.toggler-menu {
   display: none;
 }
 
@@ -181,11 +181,9 @@ a {
   left: 0;
   font-size: 20px;
   z-index: 1;
-}
+}*/
 
-.toggler span
-/*.toggler:after,
-.toggler:before*/ {
+/*.toggler span {
    display: flex;
     position: absolute;
     align-items: center;
@@ -200,7 +198,7 @@ a {
     border-bottom: 2px solid #fff;
     background: transparent;
     cursor: pointer;
-}
+}*/
 
 .burger {
     width: 26px;
@@ -243,7 +241,7 @@ a {
   left: -7px;
 }*/
 
-.toggler.open-menu span {
+/*.toggler.open-menu span {
   opacity: 0;
   transition: 0.5s;
 }
@@ -254,7 +252,7 @@ a {
   left: 3px;
   transition: 0.4s;
   color: #000;
-}
+}*/
 
 .nav,
 /*.nav-item,*/
@@ -264,12 +262,14 @@ a {
 .promo__title,
 .promo__text,
 .work,
+.bi-desctop,
 .about__subtitle-desktop,
 .shooting__text,
 .shooting__subtitle,
 .shooting__img-bottom,
 .column-right,
 .shooting__quote-three,
+.shooting__container-img.quote-three,
 .shooting__quote-four,
 .music__btn,
 .music.look,
@@ -393,6 +393,16 @@ a {
   animation-iteration-count: 1;
 }
 
+.bar {
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 10px;   
+
+}
+
 
 .work-mobile {
     display: flex;
@@ -461,7 +471,7 @@ a {
 
 .work__item-position {
     margin-top: 19px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
     letter-spacing: 0.2em;
     z-index: 1;
 }
@@ -478,26 +488,32 @@ a {
 .work__item-subtitle {
     letter-spacing: 0.2em;
     z-index: 1;
+    margin-bottom: 10px;  
+}
+
+.work__item-name.bi__name {
+    height: initial;
+    margin-bottom: 7px;
 }
 
 .work__item-name.grom__name {
     height: initial;
-    margin-bottom: 45px;
+    margin-bottom: 7px;
 }
 
 .work__item-name.doctor__name {
     height: initial;
-    margin-bottom: 45px;
+    margin-bottom: 7px;
 }
 
 .work__item-name.iowa__name {
     height: initial;
-    margin-bottom: 7%;
+    margin-bottom: 7px;
 }
 
 .work__item-name.iowa-m__name {
     height: initial;
-    margin-bottom: 14px;
+    margin-bottom: 7px;
 }
 
 .work__item-name.nyusha__name {
@@ -507,7 +523,7 @@ a {
 
 .work__item-name.leningrad__name {
     height: initial;
-    margin-bottom: 14px;
+    margin-bottom: 7px;
 }
 
 .look {
@@ -715,10 +731,10 @@ a {
   padding-bottom: 10px;
 }
 
-.shooting__container-img.quote-three {
+/*.shooting__container-img.quote-three {
   position: absolute;
 
-}
+}*/
 
 .shooting__img-mobole-three {
     display: inline-block;
@@ -1262,6 +1278,7 @@ footer {
       height: 27px;
       margin-top: 0;
       margin: 0 auto; 
+      margin-bottom: 60px;
     }
 
     .work__item.bi {
@@ -1323,6 +1340,11 @@ footer {
         transition: opacity 0.1s;
     }
 
+    .work__item-inner.bi:hover {
+      background-image: url(../image/hover-bi.gif);
+
+    }
+
     .work__item-image {
         transition: transform 300ms;
     }
@@ -1337,6 +1359,10 @@ footer {
 
     .work__item-image--bi {
         background-image: url(../image/bi2.png);
+    }
+
+    .work__item-image--bi:hover {
+        background-image: url(../image/hover-bi.gif);
     }
 
 
@@ -1613,6 +1639,10 @@ footer {
       display: block;
       padding-left: 550px;
       padding-top: 8px;
+    }
+
+    .shooting__container-img.quote-three {
+      display: block;
     }
 
     .shooting__container-image {
